@@ -116,6 +116,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="GroupManager.html#_upsert" class="tsd-kind-icon">_upsert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="GroupManager.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="GroupManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="GroupManager.html#fetchAll" class="tsd-kind-icon">fetch<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="GroupManager.html#fetchId" class="tsd-kind-icon">fetch<wbr>Id</a></li>
@@ -141,7 +142,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:32</li>
+									<li>Defined in src/managers/GroupManager.ts:44</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -188,7 +189,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of GroupManagerInterface.former</p>
 						<ul>
-							<li>Defined in src/managers/GroupManager.ts:30</li>
+							<li>Defined in src/managers/GroupManager.ts:42</li>
 						</ul>
 					</aside>
 				</section>
@@ -255,6 +256,39 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="create" class="tsd-anchor"></a>
+					<h3>create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GroupCreateOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of GroupManagerInterface.create</p>
+								<ul>
+									<li>Defined in src/managers/GroupManager.ts:55</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Creates a group.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">GroupCreateOptions</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>Options for creating a group.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The created group.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="fetch" class="tsd-anchor"></a>
 					<h3>fetch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -268,7 +302,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of GroupManagerInterface.fetch</p>
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:48</li>
+									<li>Defined in src/managers/GroupManager.ts:96</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -287,7 +321,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of GroupManagerInterface.fetch</p>
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:49</li>
+									<li>Defined in src/managers/GroupManager.ts:97</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -302,7 +336,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of GroupManagerInterface.fetch</p>
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:50</li>
+									<li>Defined in src/managers/GroupManager.ts:98</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -317,7 +351,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of GroupManagerInterface.fetch</p>
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:51</li>
+									<li>Defined in src/managers/GroupManager.ts:99</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -340,7 +374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:125</li>
+									<li>Defined in src/managers/GroupManager.ts:173</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="Group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -357,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:66</li>
+									<li>Defined in src/managers/GroupManager.ts:114</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -380,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:84</li>
+									<li>Defined in src/managers/GroupManager.ts:132</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -403,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/managers/GroupManager.ts:95</li>
+									<li>Defined in src/managers/GroupManager.ts:143</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -546,6 +580,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="GroupManager.html#_upsert" class="tsd-kind-icon">_upsert</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="GroupManager.html#create" class="tsd-kind-icon">create</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="GroupManager.html#fetch" class="tsd-kind-icon">fetch</a>
