@@ -74,18 +74,31 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Class Message</h1>
+			<h1>Class Message&lt;T&gt;</h1>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="Channel.html" class="tsd-signature-type">Channel</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Message</span>
+						<a href="Base.html" class="tsd-signature-type">Base</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="GroupMessage.html" class="tsd-signature-type">GroupMessage</a>
-							</li>
-							<li>
-								<a href="ChatMessage.html" class="tsd-signature-type">ChatMessage</a>
+								<span class="target">Message</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="GroupMessage.html" class="tsd-signature-type">GroupMessage</a>
+									</li>
+									<li>
+										<a href="ChatMessage.html" class="tsd-signature-type">ChatMessage</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -94,7 +107,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">MessageInterface</span></li>
+					<li><span class="tsd-signature-type">MessageInterface</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -103,7 +116,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Message.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="Message.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -111,8 +124,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#attachments" class="tsd-kind-icon">attachments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#channel" class="tsd-kind-icon">channel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Message.html#client" class="tsd-kind-icon">client</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#createdAt" class="tsd-kind-icon">created<wbr>At</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Message.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#likes" class="tsd-kind-icon">likes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#sourceGuid" class="tsd-kind-icon">source<wbr>Guid</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Message.html#system" class="tsd-kind-icon">system</a></li>
@@ -129,6 +143,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Message.html#_clone" class="tsd-kind-icon">_clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Message.html#_patch" class="tsd-kind-icon">_patch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Message.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Message.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Message.html#like" class="tsd-kind-icon">like</a></li>
@@ -141,32 +157,39 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Message<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, channel<span class="tsd-signature-symbol">: </span><a href="Channel.html" class="tsd-signature-type">Channel</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIGroupMessage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIChatMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Message.html" class="tsd-signature-type">Message</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Message&lt;T&gt;<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIGroupMessage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIChatMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="Base.html">Base</a>.<a href="Base.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:24</li>
+									<li>Defined in src/structures/Message.ts:23</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="Channel.html" class="tsd-signature-type">Channel</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>client: <a href="Client.html" class="tsd-signature-type">Client</a></h5>
 								</li>
 								<li>
-									<h5>channel: <a href="Channel.html" class="tsd-signature-type">Channel</a></h5>
+									<h5>channel: <span class="tsd-signature-type">T</span></h5>
 								</li>
 								<li>
 									<h5>data: <span class="tsd-signature-type">APIGroupMessage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIChatMessage</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Message.html" class="tsd-signature-type">Message</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -179,17 +202,28 @@
 					<div class="tsd-signature tsd-kind-icon">attachments<span class="tsd-signature-symbol">:</span> <a href="Attachment.html" class="tsd-signature-type">Attachment</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:23</li>
+							<li>Defined in src/structures/Message.ts:22</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="channel" class="tsd-anchor"></a>
 					<h3>channel</h3>
-					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <a href="Channel.html" class="tsd-signature-type">Channel</a></div>
+					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:17</li>
+							<li>Defined in src/structures/Message.ts:16</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="client" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> client</h3>
+					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="Client.html" class="tsd-signature-type">Client</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#client">client</a></p>
+						<ul>
+							<li>Defined in src/structures/Base.ts:4</li>
 						</ul>
 					</aside>
 				</section>
@@ -199,17 +233,18 @@
 					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:19</li>
+							<li>Defined in src/structures/Message.ts:18</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#id">id</a></p>
 						<ul>
-							<li>Defined in src/structures/Message.ts:15</li>
+							<li>Defined in src/structures/Base.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">likes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="User.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:22</li>
+							<li>Defined in src/structures/Message.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +264,7 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Guid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:20</li>
+							<li>Defined in src/structures/Message.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">system<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:21</li>
+							<li>Defined in src/structures/Message.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +284,7 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:18</li>
+							<li>Defined in src/structures/Message.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="User.html" class="tsd-signature-type">User</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Message.ts:16</li>
+							<li>Defined in src/structures/Message.ts:15</li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Message.ts:59</li>
+									<li>Defined in src/structures/Message.ts:77</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -286,6 +321,48 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="_clone" class="tsd-anchor"></a>
+					<h3>_clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">_clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#_clone">_clone</a></p>
+								<ul>
+									<li>Defined in src/structures/Base.ts:11</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="_patch" class="tsd-anchor"></a>
+					<h3>_patch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">_patch<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIGroupMessage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIChatMessage</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Base.html">Base</a>.<a href="Base.html#_patch">_patch</a></p>
+								<ul>
+									<li>Defined in src/structures/Message.ts:41</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIGroupMessage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIChatMessage</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
@@ -297,7 +374,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of MessageInterface.delete</p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:53</li>
+									<li>Defined in src/structures/Message.ts:71</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -308,17 +385,17 @@
 					<a name="fetch" class="tsd-anchor"></a>
 					<h3>fetch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageInterface.fetch</p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:41</li>
+									<li>Defined in src/structures/Message.ts:59</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,17 +403,17 @@
 					<a name="like" class="tsd-anchor"></a>
 					<h3>like</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">like<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">like<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageInterface.like</p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:47</li>
+									<li>Defined in src/structures/Message.ts:65</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -344,14 +421,14 @@
 					<a name="reply" class="tsd-anchor"></a>
 					<h3>reply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reply<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">reply<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageInterface.reply</p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:44</li>
+									<li>Defined in src/structures/Message.ts:62</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -360,7 +437,7 @@
 									<h5>message: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -368,17 +445,17 @@
 					<a name="unlike" class="tsd-anchor"></a>
 					<h3>unlike</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unlike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">unlike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageInterface.unlike</p>
 								<ul>
-									<li>Defined in src/structures/Message.ts:50</li>
+									<li>Defined in src/structures/Message.ts:68</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -393,6 +470,9 @@
 					</li>
 					<li class=" tsd-kind-class root">
 						<a href="Attachment.html" class="tsd-kind-icon">Attachment</a>
+					</li>
+					<li class=" tsd-kind-class root">
+						<a href="Base.html" class="tsd-kind-icon">Base</a>
 					</li>
 					<li class=" tsd-kind-class root">
 						<a href="BaseGroup.html" class="tsd-kind-icon">Base<wbr>Group</a>
@@ -453,10 +533,10 @@
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class root">
+					<li class="current tsd-kind-class tsd-has-type-parameter root">
 						<a href="Message.html" class="tsd-kind-icon">Message</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="Message.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -465,10 +545,13 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Message.html#channel" class="tsd-kind-icon">channel</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="Message.html#client" class="tsd-kind-icon">client</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Message.html#createdAt" class="tsd-kind-icon">created<wbr>At</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="Message.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -488,6 +571,12 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="Message.html#canDelete" class="tsd-kind-icon">can<wbr>Delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Message.html#_clone" class="tsd-kind-icon">_clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Message.html#_patch" class="tsd-kind-icon">_patch</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Message.html#delete" class="tsd-kind-icon">delete</a>

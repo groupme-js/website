@@ -79,7 +79,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Poll</span>
+						<a href="Base.html" class="tsd-signature-type">Base</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Poll</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -95,19 +100,19 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Poll.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="Poll.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Poll.html#_active" class="tsd-kind-icon">_active</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#client" class="tsd-kind-icon">client</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Poll.html#client" class="tsd-kind-icon">client</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#createdAt" class="tsd-kind-icon">created<wbr>At</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#creator" class="tsd-kind-icon">creator</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#expiresAt" class="tsd-kind-icon">expires<wbr>At</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#group" class="tsd-kind-icon">group</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Poll.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#multi" class="tsd-kind-icon">multi</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#myVote" class="tsd-kind-icon">my<wbr>Vote</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Poll.html#options" class="tsd-kind-icon">options</a></li>
@@ -127,6 +132,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Poll.html#_clone" class="tsd-kind-icon">_clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Poll.html#_patch" class="tsd-kind-icon">_patch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Poll.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Poll.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Poll.html#vote" class="tsd-kind-icon">vote</a></li>
@@ -137,17 +144,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Poll<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, group<span class="tsd-signature-symbol">: </span><a href="Group.html" class="tsd-signature-type">Group</a>, creator<span class="tsd-signature-symbol">: </span><a href="User.html" class="tsd-signature-type">User</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIPoll</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Poll.html" class="tsd-signature-type">Poll</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="Base.html">Base</a>.<a href="Base.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in src/structures/Poll.ts:32</li>
+									<li>Defined in src/structures/Poll.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -178,17 +186,18 @@
 					<div class="tsd-signature tsd-kind-icon">_active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:18</li>
+							<li>Defined in src/structures/Poll.ts:17</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="client" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> client</h3>
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="Client.html" class="tsd-signature-type">Client</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#client">client</a></p>
 						<ul>
-							<li>Defined in src/structures/Poll.ts:17</li>
+							<li>Defined in src/structures/Base.ts:4</li>
 						</ul>
 					</aside>
 				</section>
@@ -198,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">created<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:28</li>
+							<li>Defined in src/structures/Poll.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">creator<span class="tsd-signature-symbol">:</span> <a href="User.html" class="tsd-signature-type">User</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:25</li>
+							<li>Defined in src/structures/Poll.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">expires<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:30</li>
+							<li>Defined in src/structures/Poll.ts:28</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,17 +237,18 @@
 					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <a href="Group.html" class="tsd-signature-type">Group</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:24</li>
+							<li>Defined in src/structures/Poll.ts:22</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#id">id</a></p>
 						<ul>
-							<li>Defined in src/structures/Poll.ts:19</li>
+							<li>Defined in src/structures/Base.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">multi<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:26</li>
+							<li>Defined in src/structures/Poll.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">my<wbr>Vote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:23</li>
+							<li>Defined in src/structures/Poll.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -268,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="PollOption.html" class="tsd-signature-type">PollOption</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:21</li>
+							<li>Defined in src/structures/Poll.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -278,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">public<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:27</li>
+							<li>Defined in src/structures/Poll.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -288,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">question<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:20</li>
+							<li>Defined in src/structures/Poll.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +308,7 @@
 					<div class="tsd-signature tsd-kind-icon">updated<wbr>At<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:29</li>
+							<li>Defined in src/structures/Poll.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">voters<span class="tsd-signature-symbol">:</span> <a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/structures/Poll.ts:22</li>
+							<li>Defined in src/structures/Poll.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -325,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Poll.ts:66</li>
+									<li>Defined in src/structures/Poll.ts:80</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -342,7 +352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Poll.ts:63</li>
+									<li>Defined in src/structures/Poll.ts:77</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -352,6 +362,48 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="_clone" class="tsd-anchor"></a>
+					<h3>_clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">_clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Base.html">Base</a>.<a href="Base.html#_clone">_clone</a></p>
+								<ul>
+									<li>Defined in src/structures/Base.ts:11</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="_patch" class="tsd-anchor"></a>
+					<h3>_patch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">_patch<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIPoll</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Poll.html" class="tsd-signature-type">Poll</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Base.html">Base</a>.<a href="Base.html#_patch">_patch</a></p>
+								<ul>
+									<li>Defined in src/structures/Poll.ts:52</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">APIPoll</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Poll.html" class="tsd-signature-type">Poll</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="end" class="tsd-anchor"></a>
 					<h3>end</h3>
@@ -363,7 +415,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of PollInterface.end</p>
 								<ul>
-									<li>Defined in src/structures/Poll.ts:60</li>
+									<li>Defined in src/structures/Poll.ts:74</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Poll.html" class="tsd-signature-type">Poll</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -381,7 +433,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of PollInterface.fetch</p>
 								<ul>
-									<li>Defined in src/structures/Poll.ts:57</li>
+									<li>Defined in src/structures/Poll.ts:71</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Poll.html" class="tsd-signature-type">Poll</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -400,7 +452,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of PollInterface.vote</p>
 								<ul>
-									<li>Defined in src/structures/Poll.ts:52</li>
+									<li>Defined in src/structures/Poll.ts:66</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -415,7 +467,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of PollInterface.vote</p>
 								<ul>
-									<li>Defined in src/structures/Poll.ts:53</li>
+									<li>Defined in src/structures/Poll.ts:67</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -439,6 +491,9 @@
 					</li>
 					<li class=" tsd-kind-class root">
 						<a href="Attachment.html" class="tsd-kind-icon">Attachment</a>
+					</li>
+					<li class=" tsd-kind-class root">
+						<a href="Base.html" class="tsd-kind-icon">Base</a>
 					</li>
 					<li class=" tsd-kind-class root">
 						<a href="BaseGroup.html" class="tsd-kind-icon">Base<wbr>Group</a>
@@ -497,7 +552,7 @@
 					<li class=" tsd-kind-class root">
 						<a href="MemberManager.html" class="tsd-kind-icon">Member<wbr>Manager</a>
 					</li>
-					<li class=" tsd-kind-class root">
+					<li class=" tsd-kind-class tsd-has-type-parameter root">
 						<a href="Message.html" class="tsd-kind-icon">Message</a>
 					</li>
 					<li class=" tsd-kind-class root">
@@ -511,13 +566,13 @@
 					<li class="current tsd-kind-class root">
 						<a href="Poll.html" class="tsd-kind-icon">Poll</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="Poll.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="Poll.html#_active" class="tsd-kind-icon">_active</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="Poll.html#client" class="tsd-kind-icon">client</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -532,7 +587,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Poll.html#group" class="tsd-kind-icon">group</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="Poll.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -561,6 +616,12 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="Poll.html#canEnd" class="tsd-kind-icon">can<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Poll.html#_clone" class="tsd-kind-icon">_clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Poll.html#_patch" class="tsd-kind-icon">_patch</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Poll.html#end" class="tsd-kind-icon">end</a>
