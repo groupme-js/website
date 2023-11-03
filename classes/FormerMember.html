@@ -138,6 +138,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="FormerMember.html#_patch" class="tsd-kind-icon">_patch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="FormerMember.html#ban" class="tsd-kind-icon">ban</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="FormerMember.html#rejoin" class="tsd-kind-icon">rejoin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="FormerMember.html#remove" class="tsd-kind-icon">remove</a></li>
 							</ul>
 						</section>
 					</div>
@@ -149,7 +150,8 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Former<wbr>Member<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, group<span class="tsd-signature-symbol">: </span><a href="Group.html" class="tsd-signature-type">Group</a>, user<span class="tsd-signature-symbol">: </span><a href="User.html" class="tsd-signature-type">User</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIMember</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Former<wbr>Member<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, group<span class="tsd-signature-symbol">: </span><a href="BaseGroup.html" class="tsd-signature-type">BaseGroup</a>, user<span class="tsd-signature-symbol">: </span><a href="User.html" class="tsd-signature-type">User</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">APIMember</span>, state<span class="tsd-signature-symbol">: </span><a href="../enums/FormerMemberState.html" class="tsd-signature-type">FormerMemberState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Former<wbr>Member<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a>, group<span class="tsd-signature-symbol">: </span><a href="BaseGroup.html" class="tsd-signature-type">BaseGroup</a>, user<span class="tsd-signature-symbol">: </span><a href="User.html" class="tsd-signature-type">User</a>, data<span class="tsd-signature-symbol">: </span><a href="Member.html" class="tsd-signature-type">Member</a>, state<span class="tsd-signature-symbol">: </span><a href="../enums/FormerMemberState.html" class="tsd-signature-type">FormerMemberState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -165,7 +167,7 @@
 									<h5>client: <a href="Client.html" class="tsd-signature-type">Client</a></h5>
 								</li>
 								<li>
-									<h5>group: <a href="Group.html" class="tsd-signature-type">Group</a></h5>
+									<h5>group: <a href="BaseGroup.html" class="tsd-signature-type">BaseGroup</a></h5>
 								</li>
 								<li>
 									<h5>user: <a href="User.html" class="tsd-signature-type">User</a></h5>
@@ -174,7 +176,34 @@
 									<h5>data: <span class="tsd-signature-type">APIMember</span></h5>
 								</li>
 								<li>
-									<h5>state: <span class="tsd-signature-type">State</span></h5>
+									<h5>state: <a href="../enums/FormerMemberState.html" class="tsd-signature-type">FormerMemberState</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="FormerMember.html" class="tsd-signature-type">FormerMember</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides Member.constructor</p>
+								<ul>
+									<li>Defined in src/structures/FormerMember.ts:19</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>client: <a href="Client.html" class="tsd-signature-type">Client</a></h5>
+								</li>
+								<li>
+									<h5>group: <a href="BaseGroup.html" class="tsd-signature-type">BaseGroup</a></h5>
+								</li>
+								<li>
+									<h5>user: <a href="User.html" class="tsd-signature-type">User</a></h5>
+								</li>
+								<li>
+									<h5>data: <a href="Member.html" class="tsd-signature-type">Member</a></h5>
+								</li>
+								<li>
+									<h5>state: <a href="../enums/FormerMemberState.html" class="tsd-signature-type">FormerMemberState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="FormerMember.html" class="tsd-signature-type">FormerMember</a></h4>
@@ -202,7 +231,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#group">group</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:9</li>
+							<li>Defined in src/structures/Member.ts:10</li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +253,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#image_url">image_url</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:12</li>
+							<li>Defined in src/structures/Member.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +264,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#memberID">memberID</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:10</li>
+							<li>Defined in src/structures/Member.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -246,7 +275,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#muted">muted</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:13</li>
+							<li>Defined in src/structures/Member.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -257,25 +286,25 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#nickname">nickname</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:11</li>
+							<li>Defined in src/structures/Member.ts:12</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="roles" class="tsd-anchor"></a>
 					<h3>roles</h3>
-					<div class="tsd-signature tsd-kind-icon">roles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"admin"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"owner"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"user"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">roles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MemberRole</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#roles">roles</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:15</li>
+							<li>Defined in src/structures/Member.ts:16</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="state" class="tsd-anchor"></a>
 					<h3>state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">State</span></div>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../enums/FormerMemberState.html" class="tsd-signature-type">FormerMemberState</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in src/structures/FormerMember.ts:17</li>
@@ -289,7 +318,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#user">user</a></p>
 						<ul>
-							<li>Defined in src/structures/Member.ts:8</li>
+							<li>Defined in src/structures/Member.ts:9</li>
 						</ul>
 					</aside>
 				</section>
@@ -306,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:59</li>
+									<li>Defined in src/structures/Member.ts:60</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -323,7 +352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:67</li>
+									<li>Defined in src/structures/Member.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -340,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:51</li>
+									<li>Defined in src/structures/Member.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -357,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:63</li>
+									<li>Defined in src/structures/Member.ts:64</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -374,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:71</li>
+									<li>Defined in src/structures/Member.ts:72</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -391,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:55</li>
+									<li>Defined in src/structures/Member.ts:56</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -408,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:43</li>
+									<li>Defined in src/structures/Member.ts:44</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -425,7 +454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/structures/Member.ts:47</li>
+									<li>Defined in src/structures/Member.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -464,7 +493,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#_patch">_patch</a></p>
 								<ul>
-									<li>Defined in src/structures/Member.ts:29</li>
+									<li>Defined in src/structures/Member.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -488,7 +517,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of FormerMemberInterface.ban</p>
 								<ul>
-									<li>Defined in src/structures/FormerMember.ts:22</li>
+									<li>Defined in src/structures/FormerMember.ts:36</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -506,7 +535,25 @@
 							<aside class="tsd-sources">
 								<p>Implementation of FormerMemberInterface.rejoin</p>
 								<ul>
-									<li>Defined in src/structures/FormerMember.ts:25</li>
+									<li>Defined in src/structures/FormerMember.ts:39</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Member.html">Member</a>.<a href="Member.html#remove">remove</a></p>
+								<ul>
+									<li>Defined in src/structures/Member.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="FormerMember.html" class="tsd-signature-type">FormerMember</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -521,6 +568,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-enum root">
 						<a href="../enums/ChannelType.html" class="tsd-kind-icon">Channel<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum root">
+						<a href="../enums/FormerMemberState.html" class="tsd-kind-icon">Former<wbr>Member<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-class root">
 						<a href="Attachment.html" class="tsd-kind-icon">Attachment</a>
@@ -634,6 +684,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="FormerMember.html#rejoin" class="tsd-kind-icon">rejoin</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="FormerMember.html#remove" class="tsd-kind-icon">remove</a>
 							</li>
 						</ul>
 					</li>
