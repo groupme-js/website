@@ -108,10 +108,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#chats" class="tsd-kind-icon">chats</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#groups" class="tsd-kind-icon">groups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#relationships" class="tsd-kind-icon">relationships</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#rest" class="tsd-kind-icon">rest</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#token" class="tsd-kind-icon">token</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#user-1" class="tsd-kind-icon">user</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#users" class="tsd-kind-icon">users</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Client.html#ws" class="tsd-kind-icon">ws</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="Client.html#captureRejectionSymbol" class="tsd-kind-icon">capture<wbr>Rejection<wbr>Symbol</a></li>
@@ -154,20 +155,23 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Client<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Client<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ClientOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Client.html" class="tsd-signature-type">Client</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.constructor</p>
 								<ul>
-									<li>Defined in src/client/Client.ts:27</li>
+									<li>Defined in src/client/Client.ts:43</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">ClientOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Client.html" class="tsd-signature-type">Client</a></h4>
@@ -184,7 +188,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of ClientInterface.chats</p>
 						<ul>
-							<li>Defined in src/client/Client.ts:22</li>
+							<li>Defined in src/client/Client.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -195,9 +199,50 @@
 					<aside class="tsd-sources">
 						<p>Implementation of ClientInterface.groups</p>
 						<ul>
-							<li>Defined in src/client/Client.ts:20</li>
+							<li>Defined in src/client/Client.ts:25</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/client/Client.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>fetch<wbr>Partials<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>calendar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>group<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>member<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>poll<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>user<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>websocket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="relationships" class="tsd-anchor"></a>
@@ -206,7 +251,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of ClientInterface.relationships</p>
 						<ul>
-							<li>Defined in src/client/Client.ts:19</li>
+							<li>Defined in src/client/Client.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">rest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/client/Client.ts:24</li>
+							<li>Defined in src/client/Client.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -226,18 +271,18 @@
 					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/client/Client.ts:23</li>
+							<li>Defined in src/client/Client.ts:28</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="user" class="tsd-anchor"></a>
+					<a name="user-1" class="tsd-anchor"></a>
 					<h3>user</h3>
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of ClientInterface.user</p>
 						<ul>
-							<li>Defined in src/client/Client.ts:26</li>
+							<li>Defined in src/client/Client.ts:31</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +293,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of ClientInterface.users</p>
 						<ul>
-							<li>Defined in src/client/Client.ts:21</li>
+							<li>Defined in src/client/Client.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">ws<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/client/Client.ts:25</li>
+							<li>Defined in src/client/Client.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -492,7 +537,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ClientInterface.login</p>
 								<ul>
-									<li>Defined in src/client/Client.ts:37</li>
+									<li>Defined in src/client/Client.ts:60</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Client.html" class="tsd-signature-type">Client</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -510,7 +555,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of ClientInterface.logout</p>
 								<ul>
-									<li>Defined in src/client/Client.ts:47</li>
+									<li>Defined in src/client/Client.ts:70</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1018,6 +1063,9 @@
 								<a href="Client.html#groups" class="tsd-kind-icon">groups</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Client.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Client.html#relationships" class="tsd-kind-icon">relationships</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1027,7 +1075,7 @@
 								<a href="Client.html#token" class="tsd-kind-icon">token</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Client.html#user" class="tsd-kind-icon">user</a>
+								<a href="Client.html#user-1" class="tsd-kind-icon">user</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Client.html#users" class="tsd-kind-icon">users</a>

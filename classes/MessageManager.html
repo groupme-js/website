@@ -139,7 +139,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="MessageManager.html#_remove" class="tsd-kind-icon">_remove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="MessageManager.html#_upsert" class="tsd-kind-icon">_upsert</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="MessageManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="MessageManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="MessageManager.html#resolve" class="tsd-kind-icon">resolve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="MessageManager.html#resolveId" class="tsd-kind-icon">resolve<wbr>Id</a></li>
 							</ul>
@@ -251,7 +251,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#_remove">_remove</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:28</li>
+									<li>Defined in src/managers/BaseManager.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,7 +275,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#_upsert">_upsert</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:21</li>
+									<li>Defined in src/managers/BaseManager.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,10 +288,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="fetch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> fetch</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -301,6 +301,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageManagerInterface.fetch</p>
+								<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#fetch">fetch</a></p>
 								<ul>
 									<li>Defined in src/managers/MessageManager.ts:32</li>
 								</ul>
@@ -310,6 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageManagerInterface.fetch</p>
+								<p>Overrides BaseManager.fetch</p>
 								<ul>
 									<li>Defined in src/managers/MessageManager.ts:33</li>
 								</ul>
@@ -325,6 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageManagerInterface.fetch</p>
+								<p>Overrides BaseManager.fetch</p>
 								<ul>
 									<li>Defined in src/managers/MessageManager.ts:34</li>
 								</ul>
@@ -340,6 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of MessageManagerInterface.fetch</p>
+								<p>Overrides BaseManager.fetch</p>
 								<ul>
 									<li>Defined in src/managers/MessageManager.ts:35</li>
 								</ul>
@@ -365,7 +369,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:13</li>
+									<li>Defined in src/managers/BaseManager.ts:15</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -392,7 +396,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolveId">resolveId</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:18</li>
+									<li>Defined in src/managers/BaseManager.ts:20</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -515,7 +519,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="MessageManager.html#_upsert" class="tsd-kind-icon">_upsert</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="MessageManager.html#fetch" class="tsd-kind-icon">fetch</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">

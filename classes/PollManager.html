@@ -118,7 +118,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="PollManager.html#_remove" class="tsd-kind-icon">_remove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="PollManager.html#_upsert" class="tsd-kind-icon">_upsert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="PollManager.html#create" class="tsd-kind-icon">create</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="PollManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="PollManager.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="PollManager.html#resolve" class="tsd-kind-icon">resolve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="PollManager.html#resolveId" class="tsd-kind-icon">resolve<wbr>Id</a></li>
 							</ul>
@@ -215,7 +215,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#_remove">_remove</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:28</li>
+									<li>Defined in src/managers/BaseManager.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,7 +239,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#_upsert">_upsert</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:21</li>
+									<li>Defined in src/managers/BaseManager.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -296,10 +296,10 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="fetch" class="tsd-anchor"></a>
 					<h3>fetch</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="Poll.html" class="tsd-signature-type">Poll</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Poll.html" class="tsd-signature-type">Poll</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
@@ -307,6 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of PollManagerInterface.fetch</p>
+								<p>Overrides <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#fetch">fetch</a></p>
 								<ul>
 									<li>Defined in src/managers/PollManager.ts:32</li>
 								</ul>
@@ -316,6 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of PollManagerInterface.fetch</p>
+								<p>Overrides BaseManager.fetch</p>
 								<ul>
 									<li>Defined in src/managers/PollManager.ts:33</li>
 								</ul>
@@ -341,7 +343,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:13</li>
+									<li>Defined in src/managers/BaseManager.ts:15</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,7 +370,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="BaseManager.html">BaseManager</a>.<a href="BaseManager.html#resolveId">resolveId</a></p>
 								<ul>
-									<li>Defined in src/managers/BaseManager.ts:18</li>
+									<li>Defined in src/managers/BaseManager.ts:20</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -500,7 +502,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="PollManager.html#create" class="tsd-kind-icon">create</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="PollManager.html#fetch" class="tsd-kind-icon">fetch</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
